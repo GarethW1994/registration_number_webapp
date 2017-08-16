@@ -1,7 +1,7 @@
 {
   "name": "registration_number_webapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "An web application that take registration numbers, save in DB, retrieve them and filter them",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,22 @@
     "url": "git+https://github.com/SinethembaDlova/registration_number_webapp.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sinethemba Dlova",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SinethembaDlova/registration_number_webapp/issues"
   },
-  "homepage": "https://github.com/SinethembaDlova/registration_number_webapp#readme"
+  "homepage": "https://github.com/SinethembaDlova/registration_number_webapp#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-flash": "git://github.com/RGBboy/express-flash.git",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.7"
+  }
 }
