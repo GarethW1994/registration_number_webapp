@@ -77,6 +77,7 @@ app.post('/', function(req, res){
     }
     else {
       console.log("Registration number successfully added!");
+      console.log(allPlates);
       res.redirect('/');
     }
   })
