@@ -49,25 +49,41 @@ app.use(flash());
 
 
 //creating my routes
-app.get('/', function(req, res){
-  res.render('registration_number', {
-    regPlate: "adksdkfsdk"
-  });
 
-  /*RegistrationNumber.find(function(err, allPlates){
+app.get('/', function(req, res){
+  RegistrationNumber.find(function(err, allPlates){
       if (err) {
         console.log(err);
       }
 
       else {
-
+        res.render('registration_number', {
+          regPlate: allPlates.regNum
+        })
       }
-  });*/
+  });
 });
 
 app.post('/', function(req, res){
+  var enteredRegNum = req.body.takeReg;
 
+  var plates = new RegistrationNumber({
+            regNum: enteredRegNum
+        });
+        console.log(enteredRegNum);
+  plates.save(function(err, allPlates){
+    if(err){
+      console.log(err);
+    }
+    else {
+      console.log("Registration number successfully added!");
+      res.redirect('/');
+    }
+  })
 });
+
+
+
 
 
 //when my server running go to ports 3001 or any available port
