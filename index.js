@@ -73,12 +73,12 @@ app.post('/', function(req, res){
 
 
 //when my server running go to ports 3001 or any available port
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 app.listen(port, function(err) {
     if (err) {
         return err;
     } else {
-        console.log('server running on port 3001');
+        console.log('server running on port 3000');
     }
 });
