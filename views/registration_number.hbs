@@ -1,0 +1,39 @@
+<div class="container text-center">
+    <form action="/" method="post">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p><strong>Please enter a registration plate:</strong></p>
+                <div class="input-group centre-block">
+                    <input type="text" class="form-control text-center">
+                    <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">Add</button>
+        </span>
+                </div>
+            </div>
+        </div>
+
+        <!--Dropdown list  -->
+        <div class="row bg-light">
+            <div class="col-md-12 pull-right">
+                <select class="custom-select d-block my-1 float-right" required>
+              <option value="">All registration plates</option>
+              <option value="1">Cape Town</option>
+              <option value="2">Paarl</option>
+              <option value="3">Stellenbosch</option>
+            </select>
+            </div>
+        </div>
+    </form>
+    <!-- </div>Dropdown list ends   -->
+    <hr>
+    <!-- /line-->
+
+    <!--My number plate tempate starts  -->
+    <div class="row">
+        <div class="col-md-2">
+            {{regPlate}}
+        </div>
+    </div>
+    <!--Number plates ends  -->
+</div>
