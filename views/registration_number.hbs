@@ -19,26 +19,28 @@
                 </div>
             </div>
         </div>
-    </form>
-    <!--Dropdown list  -->
-    <div class="row bg-light">
-        <div class="col-md-12 pull-right">
-            <select class="custom-select d-block my-1 float-right" required>
-          <option value="">All registration plates</option>
-          <option value="1">Cape Town</option>
-          <option value="2">Paarl</option>
-          <option value="3">Stellenbosch</option>
-        </select>
+
+        <!--Dropdown list  -->
+        <div class="row bg-light">
+            <div class="col-md-12 pull-right">
+                <select class="custom-select d-block my-1 float-right" name="filter">
+                  <option value="all">All registration plates</option>
+                  <option value="ca">Cape Town</option>
+                  <option value="cj">Paarl</option>
+                  <option value="cl">Stellenbosch</option>
+                </select>
+            </div>
         </div>
-    </div>
-    <!-- </div>Dropdown list ends   -->
-    <hr>
+        <!-- </div>Dropdown list ends   -->
+        <hr>
+    </form>
+
     <!-- /line-->
     <!--My number plate tempate starts  -->
 
     <div class="row">
       {{#each regPlate}}
-          <div class="col-md-2 mt-4">
+          <div class="col-md-3 col-lg-2 mt-4">
               <li id="disk">{{regNum}}</li>
           </div>
       {{/each}}

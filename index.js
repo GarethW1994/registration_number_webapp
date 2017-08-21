@@ -66,6 +66,9 @@ app.get('/', function(req, res){
 
 app.post('/', function(req, res){
   var enteredRegNum = req.body.takeReg;
+  var selectedCity = req.body.filter.value;
+  console.log('**********');
+  console.log(selectedCity);
 
   var plates = new RegistrationNumber({
             regNum: enteredRegNum
@@ -90,6 +93,10 @@ app.post('/', function(req, res){
     })
   }
 });
+
+app.get('/registration/:city', function(req,res){
+
+})
 
 
 //when my server running go to ports 3001 or any available port
