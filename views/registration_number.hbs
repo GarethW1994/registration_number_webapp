@@ -11,6 +11,12 @@
                   </div>
                 {{/if}}
 
+                {{#if messages.success}}
+                  <div class="alert alert-success" role="alert">
+                      {{messages.success}}
+                  </div>
+                {{/if}}
+
                 <div class="input-group centre-block">
                     <input type="text" class="form-control text-center" name="takeReg">
                     <span class="input-group-btn">
@@ -23,12 +29,13 @@
         <!--Dropdown list  -->
         <div class="row bg-light">
             <div class="col-md-12 pull-right">
-                <select class="custom-select d-block my-1 float-right" name="filter">
+                <select class="custom-select d-block my-1 float-right" type="submit" name="filter">
                   <option value="all">All registration plates</option>
                   <option value="ca">Cape Town</option>
                   <option value="cj">Paarl</option>
                   <option value="cl">Stellenbosch</option>
                 </select>
+                <input type="submit" name="" value="Search">
             </div>
         </div>
         <!-- </div>Dropdown list ends   -->

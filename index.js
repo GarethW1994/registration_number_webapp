@@ -66,7 +66,7 @@ app.get('/', function(req, res){
 
 app.post('/', function(req, res){
   var enteredRegNum = req.body.takeReg;
-  var selectedCity = req.body.filter.value;
+  var selectedCity = req.body.filter;
   console.log('**********');
   console.log(selectedCity);
 
@@ -86,17 +86,21 @@ app.post('/', function(req, res){
         res.redirect('/')
       }
       else {
-        console.log("Registration number successfully added!");
-        console.log(allPlates);
+        req.flash('success', 'Registration number successfully added!');
         res.redirect('/');
       }
     })
   }
 });
 
-app.get('/registration/:city', function(req,res){
+app.post('/registration/search', function(req,res){
+  var searchString = req.body.filter;
+
+
 
 })
+
+
 
 
 //when my server running go to ports 3001 or any available port
