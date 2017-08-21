@@ -67,8 +67,6 @@ app.get('/', function(req, res){
 app.post('/', function(req, res){
   var enteredRegNum = req.body.takeReg;
   var selectedCity = req.body.filter;
-  console.log('**********');
-  console.log(selectedCity);
 
   var plates = new RegistrationNumber({
             regNum: enteredRegNum
@@ -93,8 +91,11 @@ app.post('/', function(req, res){
   }
 });
 
-app.post('/registration/search', function(req,res){
+app.post('/registration/filter', function(req,res){
   var searchString = req.body.filter;
+
+  console.log('**********');
+  console.log(selectedCity);
 
 
 
