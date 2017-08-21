@@ -1,0 +1,18 @@
+.row .col-md-2
+{
+  background-color: yellow;
+  border: 5px solid black;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 11px;
+  margin: 5px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.row .col-md-2 li
+{
+  display: inline-block;
+}

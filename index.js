@@ -51,14 +51,14 @@ app.use(flash());
 //creating my routes
 
 app.get('/', function(req, res){
-  RegistrationNumber.find(function(err, allPlates){
+  RegistrationNumber.find({}, function(err, allPlates){
       if (err) {
         console.log(err);
       }
 
       else {
         res.render('registration_number', {
-          regPlate: allPlates.regNum
+          regPlate: allPlates
         })
       }
   });
@@ -70,21 +70,26 @@ app.post('/', function(req, res){
   var plates = new RegistrationNumber({
             regNum: enteredRegNum
         });
-        console.log(enteredRegNum);
-  plates.save(function(err, allPlates){
-    if(err){
-      console.log(err);
-    }
-    else {
-      console.log("Registration number successfully added!");
-      console.log(allPlates);
-      res.redirect('/');
-    }
-  })
+
+  if (!enteredRegNum) {
+    req.flash('error', 'Please enter your a registration number!');
+    res.redirect('/');
+  }
+
+  else {
+    plates.save(function(err, allPlates){
+      if(err){
+        req.flash('error', 'The registration number has already been added!');
+        res.redirect('/')
+      }
+      else {
+        console.log("Registration number successfully added!");
+        console.log(allPlates);
+        res.redirect('/');
+      }
+    })
+  }
 });
-
-
-
 
 
 //when my server running go to ports 3001 or any available port

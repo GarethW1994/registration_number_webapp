@@ -4,36 +4,44 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <p><strong>Please enter a registration plate:</strong></p>
+
+                {{#if messages.error}}
+                  <div class="alert alert-danger" role="alert">
+                      {{messages.error}}
+                  </div>
+                {{/if}}
+
                 <div class="input-group centre-block">
                     <input type="text" class="form-control text-center" name="takeReg">
                     <span class="input-group-btn">
-          <button class="btn btn-primary" type="submit">Add</button>
-        </span>
+                <button class="btn btn-primary" type="submit">Add</button>
+                    </span>
                 </div>
             </div>
         </div>
-
-        <!--Dropdown list  -->
-        <div class="row bg-light">
-            <div class="col-md-12 pull-right">
-                <select class="custom-select d-block my-1 float-right" required>
-              <option value="">All registration plates</option>
-              <option value="1">Cape Town</option>
-              <option value="2">Paarl</option>
-              <option value="3">Stellenbosch</option>
-            </select>
-            </div>
-        </div>
     </form>
+    <!--Dropdown list  -->
+    <div class="row bg-light">
+        <div class="col-md-12 pull-right">
+            <select class="custom-select d-block my-1 float-right" required>
+          <option value="">All registration plates</option>
+          <option value="1">Cape Town</option>
+          <option value="2">Paarl</option>
+          <option value="3">Stellenbosch</option>
+        </select>
+        </div>
+    </div>
     <!-- </div>Dropdown list ends   -->
     <hr>
     <!-- /line-->
-
     <!--My number plate tempate starts  -->
+
     <div class="row">
-        <div class="col-md-2 mt-4">
-            {{regPlate}}
-        </div>
-    </div>
-    <!--Number plates ends  -->
+      {{#each regPlate}}
+          <div class="col-md-2 mt-4">
+              <li id="disk">{{regNum}}</li>
+          </div>
+      {{/each}}
+  </div>
 </div>
+<!--Number plates ends  -->
