@@ -25,21 +25,23 @@
                 </div>
             </div>
         </div>
+    </form>
 
-        <!--Dropdown list  -->
-        <div class="row bg-light">
-            <div class="col-md-12 form-inline d-flex justify-content-end">
-                <select class="custom-select my-1" type="submit" name="filter">
-                  <option value="all">All registration plates</option>
-                  <option value="ca">Cape Town</option>
-                  <option value="cj">Paarl</option>
-                  <option value="cl">Stellenbosch</option>
-                </select>
-                <button type="submit" class="btn btn-primary">Search</button>
-            </div>
-        </div>
-        <!-- </div>Dropdown list ends   -->
-        <hr>
+    <form  action="/registration/filter" method="post">
+      <!--Dropdown list  -->
+      <div class="row bg-light">
+          <div class="col-md-12 form-inline d-flex justify-content-end">
+              <select class="custom-select my-1" type="submit" name="filter">
+                <option value="">All registration plates</option>
+                <option value="ca">Cape Town</option>
+                <option value="cj">Paarl</option>
+                <option value="cl">Stellenbosch</option>
+              </select>
+              <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+      </div>
+      <!-- </div>Dropdown list ends   -->
+      <hr>
     </form>
 
     <!-- /line-->

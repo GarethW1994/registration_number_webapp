@@ -66,7 +66,6 @@ app.get('/', function(req, res){
 
 app.post('/', function(req, res){
   var enteredRegNum = req.body.takeReg;
-  var selectedCity = req.body.filter;
 
   var plates = new RegistrationNumber({
             regNum: enteredRegNum
@@ -92,14 +91,24 @@ app.post('/', function(req, res){
 });
 
 app.post('/registration/filter', function(req,res){
-  var searchString = req.body.filter;
+  var selectedCity = req.body.filter;
 
   console.log('**********');
   console.log(selectedCity);
 
+  RegistrationNumber.find({ regNum: { $regex: selectedCity}}, function(err, searchResults){
+    if (err) {
+      console.log(err);
+    }
+    else {
+      console.log(searchResults);
+      res.render('registration_number', {
+        regPlate: searchResults
+      })
+    }
+  })
 
-
-})
+});
 
 
 
