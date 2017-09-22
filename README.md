@@ -4,7 +4,7 @@
 
 1. About the webapp
 2. Tech Stack
-3. Dependencies
+3. Module/Dependencies
 4. Installations
 5. How to use the web application
 6. What am I missing
@@ -28,3 +28,14 @@ The technology that we are using on the application its MongoDB, ExpressJS and N
 - NodeJS is our server for the application. To learn more about NodeJS please read up at https://nodejs.org/
 
 Our application is deployed at heroku so that anyone anywhere can access it.
+
+
+### Modules/Dependencies
+
+The dependencies that I used on the application is body-parser, express, express-flash, express-handlebars, express-session and mongodb.
+
+- BodyParser is responsible for parsing request bodies in a middleware before your handlers. This is how you install body-parser:
+  '$ npm install body-parser'
+
+  this is how you require the API:
+  'var bodyParser = require('body-parser');'
