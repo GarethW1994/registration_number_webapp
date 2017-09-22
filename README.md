@@ -32,14 +32,16 @@ Our application is deployed at heroku so that anyone anywhere can access it.
 
 ### Modules/Dependencies
 
-The dependencies that I used on the application is body-parser, express, express-flash, express-handlebars, express-session and mongodb.
+The dependencies that I used on the application is body-parser, express, express-flash, express-handlebars, express-session and mongoose.
 
 - BodyParser is responsible for parsing request bodies in a middleware before your handlers. This is how you install body-parser:
-  ```
-    $ npm install body-parser
-  ```
 
-  this is how you require the API:
-  ```
-    var bodyParser = require('body-parser');
-  ```
+- Express
+
+- Express-flash
+
+- Express-handlebars
+
+- Express-session
+
+- Mongoose it helps us to facilitate the communication between our application and the mongo database.
