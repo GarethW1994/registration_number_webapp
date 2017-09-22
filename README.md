@@ -2,13 +2,13 @@
 
  This is the content to expect from the documentation:
 
-- About the webapp
-- Tech Stack
-- Dependencies
-- Installations
-- How to use the web application
-- What am I missing
-- Contribution
+1. About the webapp
+2. Tech Stack
+3. Dependencies
+4. Installations
+5. How to use the web application
+6. What am I missing
+7. Contribution
 
 
 ### About the webapp
