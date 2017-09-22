@@ -11,8 +11,8 @@
 - Contribution
 
 
-###About the webapp
+### About the webapp
 
-Registration web application is a app that allows users to enter the a registration number and filter according to a particular city to get registration plates from that city.
+Registration web application is a app that allows users to enter registration numbers and filter according to a particular city to get registration plates from that city.
 
-This is where you can get to play around the app: http://registration-backend.herokuapp.com/
+This is where you can get to play around the application: http://registration-backend.herokuapp.com/.
