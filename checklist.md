@@ -15,7 +15,7 @@
 # How to use the webapp?
   Explicitly explaining how the user and the developer can use the app.
 
-# Am I missing anything?
+# What am I missing?
   Inviting anyone who'll be checking the app to give feedback on any issue.
 
 # Contribution
