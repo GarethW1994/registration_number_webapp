@@ -17,4 +17,4 @@ Registration web application is a app that allows users to enter registration nu
 
 This is where you can get to play around the application: http://registration-backend.herokuapp.com/.
 
-(/regnum.png)
+(regnum.png)
