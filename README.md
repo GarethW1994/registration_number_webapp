@@ -3,12 +3,12 @@
  This is the content to expect from the documentation:
 
 1. About the webapp
-2. Tech Stack
-3. Module/Dependencies
-4. Installations
-5. How to use the web application
-6. What am I missing
-7. Contribution
+1. Tech Stack
+1. Module/Dependencies
+1. What am I missing?
+1. Contribution
+1. Installations
+1. How to use the web application
 
 
 ### About the webapp
@@ -45,3 +45,15 @@ The dependencies that I used on the application is body-parser, express, express
 - Express-session is an express middleware that stores sessions.
 
 - Mongoose it helps us to facilitate the communication between our application and the mongo database.
+
+
+### What am I missing?
+
+- I didnt do any test on on my application, you may need to install mocha or any testing of your choice and do test to make sure every function on the application does what its intended for.
+- I didn't do toUpperCase to make sure that my registration plates when they are rendered to the screen are I displayed in capital letters.
+
+What else am I missing? Nothing is impossible, everything its better in its beta form. Feel free to contribute if you feel there is something I didn't do.
+
+### Contribution
+
+### Installations
