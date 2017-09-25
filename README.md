@@ -67,3 +67,12 @@ git clone URL
 ```
 
 ### Installations
+
+#### NodeJS
+
+You first need to check if you have any node version on your machine by running this command:
+```
+node -v
+```
+
+if you don't have have nodejs on your machine, follow the commands on this link. https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
