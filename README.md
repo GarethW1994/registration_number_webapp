@@ -7,11 +7,11 @@
 1. Module/Dependencies
 1. What am I missing?
 1. Contribution
-1. Installations
-1. How to use the web application
+1. How developers can use this web application
+    - Instalations
+    - Runnning the we application
 
-
-### About the webapp
+## About the webapp
 
 Registration web application is a app that allows users to enter registration numbers and filter according to a particular city to get registration plates from that city.
 
@@ -19,7 +19,7 @@ This is how the application looks like and you can get to play around the applic
 
 ![regnum](https://user-images.githubusercontent.com/22472229/30746316-b888c738-9fa9-11e7-908b-9cad703edf3a.png)
 
-### Tech Stack
+## Tech Stack
 
 The technology that we are using on the application its MongoDB, ExpressJS and NodeJS.
 
@@ -30,7 +30,7 @@ The technology that we are using on the application its MongoDB, ExpressJS and N
 Our application is deployed at heroku so that anyone anywhere can access it.
 
 
-### Modules/Dependencies
+## Modules/Dependencies
 
 The dependencies that I used on the application is body-parser, express, express-flash, express-handlebars, express-session and mongoose. This is where you can find and read more about each packages, https://www.npmjs.com.
 
@@ -47,14 +47,14 @@ The dependencies that I used on the application is body-parser, express, express
 - Mongoose it helps us to facilitate the communication between our application and the mongo database.
 
 
-### What am I missing?
+## What am I missing?
 
 - I didnt do any test on on my application, you may need to install mocha or any testing of your choice and do test to make sure every function on the application does what its intended for.
 - I didn't do toUpperCase to make sure that my registration plates when they are rendered to the screen are I displayed in capital letters.
 
 What else am I missing? Nothing is impossible, everything its better in its beta form. Feel free to contribute if you feel there is something I didn't do.
 
-### Contribution
+## Contribution
 
 If you'd love to contribute and make the application better:
 
@@ -65,6 +65,8 @@ If you'd love to contribute and make the application better:
 ```
 git clone URL
 ```
+
+## How developers can use this web application
 
 ### Installations
 
@@ -84,3 +86,7 @@ Run this command on your terminal to install all the packages installed on the a
 ```
 npm install
 ```
+
+#### Mongo
+
+If you dont
