@@ -32,16 +32,16 @@ Our application is deployed at heroku so that anyone anywhere can access it.
 
 ### Modules/Dependencies
 
-The dependencies that I used on the application is body-parser, express, express-flash, express-handlebars, express-session and mongoose.
+The dependencies that I used on the application is body-parser, express, express-flash, express-handlebars, express-session and mongoose. This is where you can find and read more about each packages, https://www.npmjs.com.
 
 - BodyParser is responsible for parsing request bodies in a middleware before your handlers. This is how you install body-parser:
 
-- Express
+- Express is a web framework for node.
 
-- Express-flash
+- Express-flash is responsible for making for creating flash messages, to make the application interactive.
 
-- Express-handlebars
+- Express-handlebars is responsible for creating templates.
 
-- Express-session
+- Express-session is an express middleware that stores sessions.
 
 - Mongoose it helps us to facilitate the communication between our application and the mongo database.
