@@ -56,4 +56,14 @@ What else am I missing? Nothing is impossible, everything its better in its beta
 
 ### Contribution
 
+If you'd love to contribute and make the application better:
+
+1. Create an issue and tell me about the idea (maybe I can help).
+1. Fork the application to your github account so that you'll have rights to commit and push.
+1. Clone your forked version of the application to your local machine.
+-   To clone the application you click on the clone/download button, copy the web URL and run the clone command on your terminal.
+```
+git clone URL
+```
+
 ### Installations
