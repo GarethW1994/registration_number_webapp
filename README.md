@@ -9,7 +9,7 @@
 1. Contribution
 1. How developers can use this web application
     - Instalations
-    - Runnning the we application
+    - Runnning the web application
 
 ## About the webapp
 
@@ -89,4 +89,17 @@ npm install
 
 #### Mongo
 
-If you dont
+If you don't have mongo installed on your local machine, follow the commands on this [link](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04) (this only works for ubuntu-16-04 distributions). By installing this this will allow you to save the registration plates on the database.
+
+
+
+### Runnning the web application
+
+On your cloned application, run this command on your terminal:
+```
+nodemon index.js
+```
+
+This commanding will start running the express server and will log a port on which the application is running on, ofwhich in this case its port 3000.
+
+On your browser go to http://localhost:3000 thats where you'll be able to see the application
