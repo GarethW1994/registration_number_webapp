@@ -23,9 +23,9 @@ This is how the application looks like and you can get to play around the applic
 
 The technology that we are using on the application its MongoDB, ExpressJS and NodeJS.
 
-- MongoDB is responsible for ensuring that our data its persistent. To learn more about MongoDB please read up at https://www.mongodb.com/   
-- ExpressJS is a NodeJS framework that is responsible for routing with the middle-wares. To learn more about ExpressJS please read up at https://expressjs.com/
-- NodeJS is our server for the application. To learn more about NodeJS please read up at https://nodejs.org/
+- MongoDB is responsible for ensuring that our data its persistent. To learn more about MongoDB please read up at https://www.mongodb.com.   
+- ExpressJS is a NodeJS framework that is responsible for routing with the middle-wares. To learn more about ExpressJS please read up at https://expressjs.com.
+- NodeJS is our server for the application. To learn more about NodeJS please read up at https://nodejs.org.
 
 Our application is deployed at heroku so that anyone anywhere can access it.
 
@@ -34,7 +34,7 @@ Our application is deployed at heroku so that anyone anywhere can access it.
 
 The dependencies that I used on the application is body-parser, express, express-flash, express-handlebars, express-session and mongoose. This is where you can find and read more about each packages, https://www.npmjs.com.
 
-- BodyParser is responsible for parsing request bodies in a middleware before your handlers. This is how you install body-parser:
+- BodyParser is responsible for parsing request bodies in a middleware before your handlers. This is how you install body-parser.
 
 - Express is a web framework for node.
 
@@ -77,7 +77,7 @@ You first need to check if you have any node version on your machine by running 
 node -v
 ```
 
-if you don't have have nodejs on your machine, follow the commands on this [link]:(https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+if you don't have have nodejs on your machine, follow the commands on this [link]:(https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
 
 
 #### NPM
@@ -102,4 +102,4 @@ nodemon index.js
 
 This commanding will start running the express server and will log a port on which the application is running on, ofwhich in this case its port 3000.
 
-On your browser go to http://localhost:3000 thats where you'll be able to see the application
+On your browser go to http://localhost:3000 thats where you'll be able to see the application.
