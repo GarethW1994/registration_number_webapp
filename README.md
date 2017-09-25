@@ -75,7 +75,7 @@ You first need to check if you have any node version on your machine by running 
 node -v
 ```
 
-if you don't have have nodejs on your machine, follow the commands on this [link]:  https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+if you don't have have nodejs on your machine, follow the commands on this [link]:  (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 
 
 #### NPM
